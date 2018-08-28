@@ -3,9 +3,9 @@ swagger: "2.0"
 x-collection-name: Lykke
 x-complete: 0
 info:
-  title: Lykke Get API Assetpairs
+  title: Lykke Add API Invertedassetpairs
   version: 1.0.0
-  description: Get api assetpairs.
+  description: Add api invertedassetpairs.
 basePath: /
 schemes:
 - http
@@ -56,6 +56,25 @@ paths:
           description: OK
       tags:
       - Assetpairs
+  /api/InvertedAssetPairs:
+    post:
+      summary: Add API Invertedassetpairs
+      description: Add api invertedassetpairs.
+      operationId: ApiInvertedAssetPairsPost
+      x-api-path-slug: apiinvertedassetpairs-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: body
+        name: model
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Invertedassetpairs
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: nFusion Solutions
 x-complete: 1
@@ -171,4 +170,3 @@ paths:
       - Pricesrequested
       - Currency
       - Pairs
----
